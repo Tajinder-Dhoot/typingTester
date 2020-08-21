@@ -29,36 +29,69 @@ p {
     font-size: 1.2em;
 }
 
+.test-result-area {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .test-area {
-    max-width: 70%;
-    margin: 0 auto;
+    width: 70%;
     padding: 0 2em;
 }
 
-.original-text {
-    max-width: 550px;
-    background-color: #ededed;
+.display-result {
+    width: 30%;
+    text-align: center;
+    margin-right: 2em;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    background-color: #429890;
+    border: solid;
+    border-radius: 10px;
+    box-shadow: -0.5px -0.5px 0px rgba(110, 107, 107, 0.7);
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.display-result div {
+    padding: 1em;
+}
+
+.display-result #errors-count {
+    color: green;
+}
+
+#select-para {
+    display: block;
+    padding: 0.5em;
     margin: 1em auto;
+    border: 2px solid grey;
+}
+
+.original-text, .test-wrapper, .meta {
+    max-width: 550px;
+    margin: 1em auto;
+}
+
+.original-text {
+    background-color: #ededed;
     padding: 1em;
 }
 
 .test-wrapper {
-    max-width: 550px;
-    margin: 1em auto;
     display: flex;
     border: 10px solid grey;
     border-radius: 10px;
 }
 
-.test-wrapper textarea {
-    flex: 1;
-    font-size: 1.2em;
+.test-wrapper textarea, #timer {
     line-height: 1.5;
 }
 
-.meta {
-    max-width: 550px;
-    margin: 1em auto;
+.test-wrapper textarea {
+    flex: 1;
+    font-size: 1.2em;
 }
 
 #timer {

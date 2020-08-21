@@ -19,17 +19,35 @@
                 EXACTLY, in the field below. The timer starts when you start typing, 
                 and only stops when you match this text exactly. Good Luck!</p>
         </article>
-        <section class="test-area">
-            <div class="original-text">
-                <p>Type to test.</p>
-            </div>
-            <div class="test-wrapper">
-                <textarea id="test-input" name="textarea" rows="6" placeholder="Clock starts when you start typing..."></textarea>
-            </div>
-            <div class="meta">
-                <div id="timer">00:00:00</div>
-                <button id="reset">Start Over</button>
-            </div>
-        </section>
+        <div class="test-result-area">
+            <section class="test-area">
+                <select id="select-para">
+                    <option value="intoductoryParagragh">Intoductory Paragragh</option>
+                    <option value="recentEmergence">The recent emergence...</option>
+                    <option value="touchTypists">Many touch typists...</option>
+                    <option value="frankEdward">Frank Edward McGurrin,...</option>
+                    <option value="twoMembers">Two members of the 1984 class...</option>
+                </select>
+                <div class="original-text" id="para-text-box">
+                    <p>This is a typing test. Your goal is to duplicate the provided text, EXACTLY, in the field below. The timer starts when you start typing, and only stops when you match this text exactly. Good Luck!</p>
+                </div>
+                <div class="test-wrapper">
+                    <textarea id="test-input" name="textarea" rows="6" placeholder="Clock starts when you start typing..."></textarea>
+                </div>
+                <div class="meta">
+                    <div id="timer">00:00:00</div>
+                    <button id="reset">Start Over</button>
+                </div>
+            </section>
+            <section class="display-result">
+                <div>
+                    <p>Total Errors: <span id="errors-count" >0</span></p>
+                </div>
+                <div>
+                    <p>Words/min: <span id="words-count">0</span></p>
+                </div>
+            </section>
+        </div>
+        
     </main>
 </body>
